@@ -1,0 +1,11 @@
+-ts_type cn
+-ts_exact_final_time MATCHSTEP
+-ts_theta_endpoint
+-snes_linesearch_type basic
+-pc_type lu
+-snes_atol 1e-8
+-snes_rtol 1e-8
+-snes_linesearch_type basic
+-pc_type bjacobi # Required for parallel computation
+-sub_pc_type lu
+-sub_pc_factor_shift_type NONZERO
